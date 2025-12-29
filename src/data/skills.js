@@ -15,7 +15,7 @@ export const skills = [
   },
   {
     id: 3,
-    name: "Typescript",
+    name: "TypeScript",
     icon: "FileType",
     level: "Intermediate",
     experience: "1 years",
@@ -29,7 +29,7 @@ export const skills = [
   },
   {
     id: 5,
-    name: "Tailwinds CSS",
+    name: "Tailwind CSS",
     icon: "Palette",
     level: "Intermediate",
     experience: "1 years",
@@ -43,7 +43,7 @@ export const skills = [
   },
   {
     id: 7,
-    name: "Git",
+    name: "Git & GitHub",
     icon: "GitBranch",
     level: "Intermediate",
     experience: "2 years",
@@ -57,7 +57,7 @@ export const skills = [
   },
   {
     id: 9,
-    name: "Rest API",
+    name: "REST APIs",
     icon: "Globe",
     level: "Intermediate",
     experience: "1 years",
@@ -72,7 +72,7 @@ export const skills = [
   {
     id: 11,
     name: "Figma",
-    icon: "Figmacon",
+    icon: "Figma",
     level: "Intermediate",
     experience: "1 years",
   },
