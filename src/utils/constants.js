@@ -5,7 +5,9 @@ export const PERSONAL_INFO = {
   email: "juliochristianto@gmail.com",
   location: "Jakarta, Indonesia",
   resume: "https://example.com/resume.pdf",
-  bio: "Passionate frontend developer with a knack for creating engaging user experiences. Skilled in React, JavaScript, and modern web technologies.",
+  bio: [
+    "Passionate frontend developer with a knack for creating engaging user experiences. Skilled in React, JavaScript, and modern web technologies.",
+  ],
 };
 
 export const SOCIAL_LINKS = {
