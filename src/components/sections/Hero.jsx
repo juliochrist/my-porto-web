@@ -23,7 +23,7 @@ const Hero = () => {
           {/* Left Column Content */}
           <div className="text-left">
             <FadeIn delay={0}>
-              <div className="inline-flex items-center gap-2.5 px-[18px] py-[11px] mb-8 bg-linear-to-r from-primary/10 via-primary/15 to-primary/20 border border-primary/20 rounded-full">
+              <div className="inline-flex items-center gap-2.5 px-[18px] py-[11px] mb-8 bg-gradient-to-r from-primary/10 via-primary/15 to-primary/20 border border-primary/20 rounded-full">
                 <Star className="w-4 h-4 text-primary" />
                 <span className="text-xs md:text-sm text-white tracking-[1.2px]">
                   {PERSONAL_INFO.title} | Based in {PERSONAL_INFO.location}
@@ -32,8 +32,8 @@ const Hero = () => {
             </FadeIn>
 
             <FadeIn delay={100}>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal text-white mb-6 leading-thigt">
-                My Porto Web
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal text-white mb-6 leading-tight">
+                My Portofolio Web
               </h1>
             </FadeIn>
 

@@ -23,7 +23,7 @@ const ProjectCard = ({ project }) => {
 
         <div className="absolute inset-0 bg-linear-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
 
-        <div classNme="absolute bottom-4 right-4 flex items-center gap-3">
+        <div className="absolute bottom-4 right-4 flex items-center gap-3">
           {demoUrl && (
             <a
               href={demoUrl}

@@ -34,7 +34,7 @@ const About = () => {
           <div className="flex flex-col gap-12">
             <div className="flex flex-col gap-8">
               <FadeIn delay={60}>
-                <div className="inline-flex items-center gap-2.5 px-5 py2.5 border border-primary/30 bg-primary/10 rounded-full w-fit">
+                <div className="inline-flex items-center gap-2.5 px-5 py-2.5 border border-primary/30 bg-primary/10 rounded-full w-fit">
                   <Code2 className="w-4 h-4 text-primary" />
                   <span className="text-sm font-primary font-medium">
                     Frontend Developer
@@ -45,7 +45,7 @@ const About = () => {
 
               <FadeIn delay={100}>
                 <h2 className="text-4xl lg:text-5xl font-normal text-white leading-tight">
-                  Crafting Digital Experience That Matter
+                  Crafting Digital Experiences That Matter
                 </h2>
               </FadeIn>
 
@@ -67,7 +67,7 @@ const About = () => {
               <div className="grid grid-cols-3 gap-8">
                 {ABOUT_STATS.map((stat, index) => (
                   <div key={index} className="relative">
-                    <div className="absolute -left-4 top-0 w-1 h-full bg-linear-to-b from-primary via-primary/50 to-primary/20 rounded-full"></div>
+                    <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-primary via-primary/50 to-primary/20 rounded-full"></div>
                     <div className="text-3xl font-normal text-white mb-2 font-mono">
                       {stat.value}
                     </div>
@@ -81,7 +81,14 @@ const About = () => {
 
             <FadeIn delay={400}>
               <button
-                onClick={() => window.open(PERSONAL_INFO.resume, "_blank")}
+                onClick={() => {
+                  const link = document.createElement("a");
+                  link.href = PERSONAL_INFO.resume;
+                  link.download = "Julio_Christianto_Resume.pdf";
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
                 className=" inline-flex items-center gap-3 bg-white hover:bg-white/90 text-black rounded-full px-8 py-4 text-base font-medium transition-all duration-300 w-fit group"
               >
                 <Download className="w-5 h-5 group-hover:translate-y-0.5 transition-transform duration-300" />
@@ -112,8 +119,8 @@ const About = () => {
                 </div>
               </div>
 
-              <div classaName="relative group">
-                <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-primary/5 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+              <div className="relative group">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
                 <div className="relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300 h-full">
                   <div className="p-3 bg-primary/10 rounded-xl w-fit mb-4">
                     <Sparkles className="w-5 h-5 text-primary" />
@@ -128,7 +135,7 @@ const About = () => {
               </div>
 
               <div className="relative group">
-                <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-primary/5 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
                 <div className="relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300 h-full">
                   <div className="p-3 bg-primary/10 rounded-xl w-fit mb-4">
                     <Download className="w-5 h-5 text-primary" />
@@ -143,7 +150,7 @@ const About = () => {
               </div>
 
               <div className="col-span-2 relative group">
-                <div className="absolute inset-0 bg-linear-to-br from-primary/10 to-primary/5 rounded-2xl blur-xl opacity-50 grou-hover:opacity-75 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
                 <div className="relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/30 transition-all duration-300">
                   <div className="grid grid-cols-3 gap-6 text-center">
                     <div>
@@ -199,7 +206,7 @@ const About = () => {
                   </div>
 
                   {/* Hover Glow Effect */}
-                  <div classname="absolute inset-0 bg-linear-to-br from-primary/0 to-primary/0 group-hover:from-primary/10 group-hover:to-primary/10 rounded-2xl transition-all duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-primary/0 group-hover:from-primary/10 group-hover:to-primary/10 rounded-2xl transition-all duration-300"></div>
                 </div>
               ))}
             </div>

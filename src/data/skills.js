@@ -53,14 +53,14 @@ export const skills = [
     name: "Redux",
     icon: "Database",
     level: "Intermediate",
-    experience: "1 years",
+    experience: "1 year",
   },
   {
     id: 9,
     name: "REST APIs",
     icon: "Globe",
     level: "Intermediate",
-    experience: "1 years",
+    experience: "1 year",
   },
   {
     id: 10,
@@ -74,7 +74,7 @@ export const skills = [
     name: "Figma",
     icon: "Figma",
     level: "Intermediate",
-    experience: "1 years",
+    experience: "1 year",
   },
   {
     id: 12,

@@ -4,17 +4,17 @@ export const PERSONAL_INFO = {
   role: "Frontend Developer",
   email: "juliochristianto@gmail.com",
   location: "Jakarta, Indonesia",
-  resume: "https://example.com/resume.pdf",
+  resume: "/front-end-resume.pdf",
   bio: [
     "Passionate frontend developer with a knack for creating engaging user experiences. Skilled in React, JavaScript, and modern web technologies.",
   ],
 };
 
 export const SOCIAL_LINKS = {
-  github: "",
-  linkedin: "",
-  instagram: "",
-  dribble: "",
+  github: "https://github.com/juliochrist",
+  linkedin: "https://www.linkedin.com/in/julio-christianto-769133394/",
+  instagram: "https://www.instagram.com/juliochristt/",
+  dribbble: "",
 };
 
 export const STATS = [
