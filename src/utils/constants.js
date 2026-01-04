@@ -12,9 +12,9 @@ export const PERSONAL_INFO = {
 
 export const SOCIAL_LINKS = {
   github: "https://github.com/juliochrist",
-  linkedin: "https://www.linkedin.com/in/julio-christianto-769133394/",
-  instagram: "https://www.instagram.com/juliochristt/",
-  dribbble: "",
+  linkedin: "https://linkedin.com/in/julio-christianto-769133394/",
+  twitter: "https://instagram.com/juliochristt/",
+  dribbble: "https://dribbble.com",
 };
 
 export const STATS = [
